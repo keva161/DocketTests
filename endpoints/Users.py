@@ -1,18 +1,20 @@
 import requests
 
 class Users:
-    def __init__(self, user):
-        self.username = user.username
-        self.email = user.email
-        self.password = user.password
-        self.token = user.generate_token()
+    def __init__(self, token):
+        self.token = token
         self.url = 'http://127.0.0.1:5000/api/Users/'
 
     def GetAllUsers(self):
-        return requests.get(self.url, headers={'token': self.token}).status_code
+        result = requests.get(self.url, headers={'token': self.token}).status_code
+        return result
 
-    def DeleteUsers(self):
-        return requests.delete(self.url, headers={'token': self.token}).text
+    def DeleteUser(self):
+        result = requests.delete(self.url, headers={'token': self.token}).text
+        return result
 
-    def UpdateUsers(self):
-        return requests.post(self.url, headers=self.headers).text
+    def UpdateUser(self, user):
+
+        print(user["Password"])
+        result = requests.put(self.url, headers={'token': self.token}, json={"Username": user["Username"], "Email Address": user["Email Address"], "Password": user["Password"]}).text
+        return result
