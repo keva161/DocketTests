@@ -2,15 +2,18 @@ import pytest
 import requests
 from utils.Generate import Generate
 
+# These fixtures run before the tests and gener the user, and API tokens that are used in the tests.
+# The token fixture also deletes the account associated with the generated token once the test has run.
+
 @pytest.fixture
 def user():
     generator = Generate()
-    user = generator.user()
+    user = generator.GetUser()
     yield user
 
 @pytest.fixture()
 def token():
     generator = Generate()
-    token = generator.token()
+    token = generator.GetToken()
     yield token
     requests.delete('http://127.0.0.1:5000/api/Users/', headers={'token': token})

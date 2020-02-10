@@ -1,12 +1,13 @@
 import requests
+from Config import Config
 
 class Users:
     def __init__(self, token):
         self.token = token
-        self.url = 'http://127.0.0.1:5000/api/Users/'
+        self.url = Config.SERVER + '/api/Users/'
 
     def GetAllUsers(self):
-        result = requests.get(self.url, headers={'token': self.token}).status_code
+        result = requests.get(self.url, headers={'token': self.token}).text
         return result
 
     def DeleteUser(self):
