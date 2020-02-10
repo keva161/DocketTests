@@ -12,7 +12,7 @@ Your steps may differ depending on your operating system but all are supported b
 
 1. Make sure you have [Python](http://python.org) installed and correctly setup for your operating system (you will need 3.7 or higher).
 2. You will also need to install `pipenv`. This can be installed by typing `pip install pipenv` from the command line.
-3. Clone this repo, or down it [here](https://github.com/qxf2/qxf2-page-object-model/archive/master.zip).
+3. Clone this repo, or down it [here](https://github.com/keva161/DocketTests/archive/master.zip).
 4. After unzipping the downloaded archive. Navigate to where you downloaded it and open up a terminal in the location.
 5. Type: `pipenv install` to install the required dependencies.
 
@@ -60,7 +60,5 @@ Have a custom solution that you would like to created automated tests for? reach
 I'm a freelance software tester based in the southwest of the UK. Please feel free to check out my blog on which I write articles about software testing. Or connect with me via email or Twitter.
 
 Website: [http://kevintuck.co.uk](http://kevintuck.co.uk)
-
 Email: [kevin@kevintuck.co.uk](mailto:kevin@kevintuck.co.uk)
-
 Twitter: [http://twitter.com/keva161](http://twitter.com/keva161)
