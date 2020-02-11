@@ -15,6 +15,7 @@ Your steps may differ depending on your operating system but all are supported b
 3. Clone this repo, or down it [here](https://github.com/keva161/DocketTests/archive/master.zip).
 4. After unzipping the downloaded archive. Navigate to where you downloaded it and open up a terminal in the location.
 5. Type: `pipenv install` to install the required dependencies.
+6. Type the command 'pipenv run python -m pytest' to run the tests.
 
 I hope these example tests are useful to you and they become the basis for your learning about API testing.
 

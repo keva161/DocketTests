@@ -15,7 +15,5 @@ class Users:
         return result
 
     def UpdateUser(self, user):
-
-        print(user["Password"])
         result = requests.put(self.url, headers={'token': self.token}, json={"Username": user["Username"], "Email Address": user["Email Address"], "Password": user["Password"]}).text
         return result
