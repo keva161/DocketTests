@@ -1,7 +1,7 @@
 from endpoints.Register import Register
 
 def test_register_new_user(user):
-    # This test registered a new user.
+    # This test registers a new user.
     Registration = Register()
     result = Registration.CreateUser(user)
 

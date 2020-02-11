@@ -1,4 +1,4 @@
-# Docket API Test Examples
+# Docket Test - Example API Tests
 
 This repository contains sample API tests that can be used for practising your API testing skills with [Docket](https://github.com/keva161/Docket).
 

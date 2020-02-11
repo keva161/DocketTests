@@ -1,10 +1,10 @@
 import requests
-from Config import Config
+from Config import config
 
 class Users:
     def __init__(self, token):
         self.token = token
-        self.url = Config.SERVER + '/api/Users/'
+        self.url = config.SERVER + '/api/Users/'
 
     def GetAllUsers(self):
         result = requests.get(self.url, headers={'token': self.token}).text
