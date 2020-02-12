@@ -20,7 +20,7 @@ class Generate(object):
         return new_user
 
     def GetToken(self):
-        token = requests.post('http://127.0.0.1:5000/api/Register/', json={'Username': self.user["Username"],'Email Address': self.user["Email Address"],'Password': self.user["Password"]}).text.split()[-1][:-2]
+        token = requests.post('http://127.0.0.1:5000/api/Register/', json={'Username': self.user["Username"],'Email Address': self.user["Email Address"],'Password': self.user["Password"]}).text.split()[-2][:-1]
         return token
 
 
