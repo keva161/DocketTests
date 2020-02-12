@@ -1,5 +1,5 @@
 import requests
-from Config import config
+from config import config
 
 class Users:
     def __init__(self, token):
@@ -15,5 +15,7 @@ class Users:
         return result
 
     def UpdateUser(self, user):
-        result = requests.put(self.url, headers={'token': self.token}, json={"Username": user["Username"], "Email Address": user["Email Address"], "Password": user["Password"]}).text
+        result = requests.put(self.url, headers={'token': self.token},
+                              json={"Username": user["Username"], "Email Address": user["Email Address"],
+                                    "Password": user["Password"]}).text
         return result

@@ -1,5 +1,5 @@
 import requests
-from Config import config
+from config import config
 
 
 class Todo:
